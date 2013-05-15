@@ -1,0 +1,10 @@
+<h2><%= t(:newissuealertlist_index, :project => @project.name).html_safe %></h2>
+
+<% @newissuealerts = Newissuealert.find(:all, :conditions => { :project_id => @project.id, :enabled => true } ) %>
+<% for newissuealert in @newissuealerts %>
+	<div class="box tabular settings">
+		<p><label><%= l(:email_addresses) %>:</label> <%= newissuealert.mail_addresses %></p>
+		<!-- <p><label><%= l(:enabled) %>:</label> <%= newissuealert.enabled ? l(:general_text_yes) : l(:general_text_no) %></p>
+		<p><label><%= l(:newissuealerts_set_priority) %>:</label> <%= newissuealert.priority ? l(:general_text_yes) : l(:general_text_no) %></p> -->
+	</div>
+<% end %>

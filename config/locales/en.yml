@@ -1,0 +1,5 @@
+# English strings go here for Rails i18n
+en:
+  newissuealertlist_index: "Alerted Users"
+  newissuealertlist: "Alerted Users"
+  permission_newissuealertlist: "View Alerted Users"
