@@ -3,7 +3,7 @@ Redmine::Plugin.register :newissuealertlist do
   author 'Jason Butz'
   description 'Provides a list of who gets notified of new issues.'
   version '0.0.1'
-  url 'http://example.com/path/to/plugin'
+  url 'https://github.com/jbutz/redmine_newissuealertlist'
   author_url 'http://www.jasonbutz.info'
 
   project_module :newissuealertlist do
