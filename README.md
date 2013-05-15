@@ -1,2 +1,0 @@
-redmine_newissuealertlist
-=========================
